@@ -8,7 +8,7 @@
   cursor: pointer;
   @include transition-ease;
 
-  &_burger {
+  &__burger {
     position: absolute;
     right: 0;
     top: 0.5rem;
@@ -82,7 +82,7 @@ nav {
       transform: translateY(0);
     }
 
-    &_item {
+    &__item {
       transform: translateX(100vw);
       @include transition-ease;
 
@@ -95,7 +95,7 @@ nav {
       }
     }
 
-    &_link {
+    &__link {
       display: inline-block;
       font-size: 2rem;
       text-transform: uppercase;

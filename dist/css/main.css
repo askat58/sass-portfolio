@@ -18,14 +18,14 @@
   background-size: cover;
 }
 
-.home_name {
+.home__name {
   font-size: 5rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid set-text-color;
 }
 
-.home_name--last {
+.home__name--last {
   color: #ff652f;
   font-weight: 700;
 }
@@ -42,7 +42,7 @@
   transition: all 0.5s ease-in-out;
 }
 
-.menu-btn_burger {
+.menu-btn__burger {
   position: absolute;
   right: 0;
   top: 0.5rem;
@@ -53,7 +53,7 @@
   transition: all 0.5s ease-in-out;
 }
 
-.menu-btn_burger::before {
+.menu-btn__burger::before {
   content: "";
   position: absolute;
   top: -8px;
@@ -64,7 +64,7 @@
   transition: all 0.5s ease-in-out;
 }
 
-.menu-btn_burger::after {
+.menu-btn__burger::after {
   content: "";
   position: absolute;
   top: 8px;
@@ -75,18 +75,18 @@
   transition: all 0.5s ease-in-out;
 }
 
-.menu-btn_burger.open {
+.menu-btn__burger.open {
   -webkit-transform: rotate(720deg);
           transform: rotate(720deg);
   background: transparent;
 }
 
-.menu-btn_burger.open::before {
+.menu-btn__burger.open::before {
   -webkit-transform: rotate(45deg) translate(5px, 8px);
           transform: rotate(45deg) translate(5px, 8px);
 }
 
-.menu-btn_burger.open::after {
+.menu-btn__burger.open::after {
   width: 28px;
   -webkit-transform: rotate(-45deg) translate(3px, -7px);
           transform: rotate(-45deg) translate(3px, -7px);
@@ -135,23 +135,23 @@ nav .menu-nav.open {
           transform: translateY(0);
 }
 
-nav .menu-nav_item {
+nav .menu-nav__item {
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-nav .menu-nav_item.open {
+nav .menu-nav__item.open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-nav .menu-nav_item.active > a {
+nav .menu-nav__item.active > a {
   color: #ff652f;
 }
 
-nav .menu-nav_link {
+nav .menu-nav__link {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
@@ -161,7 +161,7 @@ nav .menu-nav_link {
   transition: all 0.5s ease-in-out;
 }
 
-nav .menu-nav_link:hover {
+nav .menu-nav__link:hover {
   color: #ff652f;
 }
 
@@ -185,6 +185,84 @@ nav .menu-nav_link:hover {
           transition-delay: 0.55s;
 }
 
+.about {
+  padding-bottom: 2rem;
+}
+
+.about_bio-image {
+  height: 100vh;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/Pict6.jpg") center top;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/Pict6.jpg") center top;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.about_bio-image p {
+  margin-bottom: 2rem;
+}
+
+.about__bio {
+  width: 80%;
+  text-align: center;
+}
+
+.about__bio .text-secondary {
+  padding-bottom: 1rem;
+}
+
+.about .jobs {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+.about__job {
+  background: #414141;
+  padding: 0.5rem;
+  border-bottom: 5px solid #ff652f;
+}
+
+.about__job h2,
+.about__job h3 {
+  margin: 0.5rem 0;
+}
+
+.about__job h6 {
+  margin: 0.3rem 0;
+}
+
+.about .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about footer {
+  -webkit-transform: rotate(90deg) translateY(-3rem, -5rem);
+          transform: rotate(90deg) translateY(-3rem, -5rem);
+}
+
 body {
   background: #272727;
   color: #fff;
@@ -202,6 +280,10 @@ h3 {
 a {
   color: #fff;
   text-decoration: none;
+}
+
+.text-secondary {
+  color: #ff652f;
 }
 
 header {
